@@ -1,0 +1,320 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header{
+	background-color: #9ba477;
+	align-items: center;
+	display: flex;
+  	justify-content: space-between;
+  	padding: 10px 20px;
+}
+
+
+
+span{
+	
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.font{
+	font-family: 'Khula', sans-serif;
+}
+
+.img{
+	width: 30px;
+	height: 30px;
+	justify-content: center;
+	margin:10px;
+	border-radius: 50%;
+}
+
+main{
+	flex-grow: 0;
+	height: 654px;
+}
+
+.logo-titulo{
+	display: flex;
+	background-color: #9ba477;
+	justify-content: center;
+	align-items: center;
+}
+
+.gfont{
+	font-family: 'Inter Tight', sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.section-portada{
+	height: 654px;
+	background-image: url("../img/img_don-norman_ok.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gfonts{
+	font-family: 'Inter Tight', sans-serif;
+	color: #E5E6E0;
+	position: absolute;
+	width: 476px;
+	height: 103px;
+	left: 910px;
+	top: 200px;
+
+	font-style: normal;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 103px;
+}
+
+.frase{
+	color: #E5E6E0;
+	position: absolute;
+	width: 434px;
+	height: 130px;
+	left: 933px;
+	top: 350px;
+
+	font-family: 'Karma';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.section-introduccion{
+	background-color: #AAAAAA;
+	height: 625px;
+	display: flex;
+	justify-content: center;
+}
+
+.infoPerfil{
+	align-content: center;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 350px;
+}
+
+.waves{
+	color: #282923;
+	position: absolute;
+}
+
+.fotoNorman{
+	border-radius: 50%;
+	width: 298px;
+	height: 276px;
+	margin: 80px;	
+}
+
+.titulo2{
+	color: #766352;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 64px;
+	text-align: center;
+}
+
+.texto{
+	font-family: 'Inter Tight', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+}
+
+h3{
+	font-family: 'Inter Tight', sans-serif;
+	font-style: normal;
+	text-align: center;
+}
+
+.section-principios{
+	height: 412px;
+	background-color: #AAAAAA;
+}
+
+h1{
+	color: #766352;
+	font-family: 'Inter Tight', sans-serif;
+	text-align: center;
+}
+
+.C1{
+	background-color: #E5E6E0;
+	border-radius: 10px;
+	min-height: 250px;
+}
+
+.c1-2{
+	text-align: center;
+	margin: 40px;
+	display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgprincipios{
+	width: 172px;
+	height: 146px;
+	margin: 10px;
+	padding: 10px;
+	filter: saturate(50%);
+}
+
+h4{
+	color: #9BA477;
+	font-family: 'Inter Tight', sans-serif;
+	text-align: center;
+}
+
+.fondo2{
+	background-color:#9BA477 ;
+	height: 170px;
+	align-items: center;
+	margin-top: -250px;
+}
+
+.section-consistencia{
+	background-color: #AAAAAA;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.c2{
+	background-color: #E5E6E0;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	width: 1098px;
+	margin: 20px;
+	box-shadow: 0px 4px 10px black;
+}
+
+.c2-2{
+	text-align: center;
+	margin: 100px;
+}
+
+.imgEj{
+	width: 362px;
+	margin: 20px;
+	border-radius: 5px;
+}
+
+h2{
+	color:#766352;
+	font-family: 'Khula', sans-serif;
+	font-style: normal;
+}
+
+
+.font{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-style: normal;
+}
+
+.section-learnability{
+	background-color: #AAAAAA;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.section-usabilidad{
+	background-color: #AAAAAA;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.section-previsibilidad{
+	background-color: #AAAAAA;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.section-retroalimentacion{
+	background-color: #AAAAAA;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.section-registro{
+	background-color: #AAAAAA;
+	height: 414px;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+b{
+	color: #282923;
+	font-family: 'Khula', sans-serif;
+	font-style: normal;
+	font-size: 30px;
+}
+
+.block{
+	display: flex;
+    flex-direction: column;
+}
+
+p{
+	font-family: 'Inter Tight', sans-serif;
+	font-style: normal;
+}
+
+.boton{
+	background-color: #E5E6E0;
+	border-radius: 5px;
+}
+.enviar{
+	color: black;
+	background-color: #766352;
+	border-radius: 5px;
+}
+
+.footer{
+	background-color: #9BA477;
+	height: 62px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconos{
+	margin: 10px;
+	font-size: 30px;
+}
+
+.txt{
+	display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+}
