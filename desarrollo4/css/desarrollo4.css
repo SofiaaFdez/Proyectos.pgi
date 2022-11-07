@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Rubik', sans-serif;
+}
+
+a{
+	text-decoration:none;
+}
+
+.contenedor{
+	height: 100vh;
+
+	background-image: url("../img/pexels-antoni-shkraba-4348401.jpg");
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-position: 50%;
+
+}
+
+.overlay{
+	width: 100%;
+	height: 100%;
+
+	/*background-color: rgba(255, 255, 0, 6);*/
+
+	background-color: #ffffff;
+
+	opacity: 0.6;
+
+	position: absolute;
+}
+
+.contenido{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1 1 20%;
+
+	padding: 0px 20px ;
+}
+
+.botonera{
+	display: flex;
+	align-items: center;
+	gap: 13px;
+}
+
+.logo-titulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img{
+	width: 190px;
+	height: 65px;
+	justify-content: center;
+	margin:10px;
+}
+
+dialog{
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 80%;
+}
+
+/*.modal{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity:0;
+	pointer-events: none;
+	
+}*/
+
+/*#popup:target {
+	opacity:1;
+	pointer-events: auto;
+}*/
+
+.popup-content{
+	display: flex;
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+button{
+	cursor: pointer;
+	position: absolute;
+	top:  5px;
+	right: 5px;
+
+	/*
+	background: #606061;
+	color: #FFFFFF;
+	top: -30px;
+	right: -120px;
+	line-height: 25px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	width: 25px;
+	height: 25px; */
+}
+
+.content1{
+	display: flex;
+	flex: 1 1 50%;
+	height: 100%;
+}
+
+@media screen and (max-width: 1000px){
+	.content1{
+		display: none;
+	}
+}
+
+.imgmodal{
+	width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content2{
+	display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+}
+
+.cabecera{
+	flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.cuerpo{
+	flex: 1 1 65%;
+    background-color: #EDF2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+input{
+	padding: 10px;
+}
+
+.logo{
+	width: 40%;
+    justify-content: center;
+    margin: 10px;
+}
+
+h4{
+	width: 70%;
+    text-align: center;
+}
+
+.btn-facebook{
+    background-color: #0477ea;
+    color: white;
+    padding: 5px 15px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+dialog::backdrop {
+	background: rgb(49 44 48 / 90%);
+}
+
+section{
+	flex: 0 1 80%;
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	padding: 5%;
+}
+
+.img2{
+	width: 30px;
+	height: 30px;
+}
+
+.letra_neg{
+	color: black;
+	font-size: 18px;
+}
+
+.letra_neg:hover{
+	text-decoration: underline;
+}
+
+.btn_rojo{
+	background-color: red;
+	border-radius: 10%;
+	color: white;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+
+.btn_rojo:hover{
+	background-color: #d8bfd8;
+	color: black;
+}
+
+.texto-central{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	list-style: none;
+
+	gap: 20px;
+}
+
+h1{
+	text-shadow: 3px 0px 3px #b5a7a7;
+	font-size: 40px;
+}
+
+h3{
+	font-size: 20px;
+}
+
+
+.botones{
+	display: flex;
+	gap: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.botones a {
+    transform: translateX(-39px);
+}
+
+.label{
+	padding: 10px;
+}
+p{
+	color: #918E7D;
+}
+
+.fecha{
+	display: flex;
+	gap: 10px;
+	height: 33px;
+	margin: 10px;
+}
+
+.btn{
+	background-color: #D3D7D7;
+	color: #A9AEAE ;
+	width: 150px;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer{
+	border-top: 1px solid black;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+
+	flex: 1 1 5%;
+	background-color: #EDF2F2;
+	padding: 30px;
+	justify-content: center;
+	gap: 15px;
+}
+
+.rojo{
+	color: #FF0000;
+}
