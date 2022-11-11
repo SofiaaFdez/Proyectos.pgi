@@ -1,0 +1,161 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #aaaa;
+
+
+}
+.contenedor{
+	max-width: 1000px;
+
+	/*margin: auto;
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;*/
+	
+}
+
+.tarjeta{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin-top: 100px;*/
+	margin:  100px 0;
+
+	flex-wrap: wrap;
+
+	position: relative;
+}
+
+.tarjeta:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+article: last-child{
+	margin-bottom: 100px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+h1{
+	color: white;
+}
+
+p{
+	color: white;
+}
+
+.imgBx{
+	width: 500px;
+	height: 500px;
+
+	position: relative;
+}
+
+.imgBx.contentImgBx{
+	width: 100%;
+	height: 100%;
+
+	background-image: url("img/img1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/*.imgBx img{
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	object-position: center;
+}*/
+
+.tarjeta:nth-child(even){
+	flex-direction: row-reverse;
+	align-items: center;
+	text-align: right;
+}
+
+.contentBx{
+	width: 500px;
+	height: 400px;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 50px;
+
+	background-color: black ;
+}
+
+.imgcontentBx{
+	width: 500px;
+}
+
+.contentBx a{
+	padding: 10px 10px;
+	border: 2px solid white;
+	text-decoration: none;
+	color: white;
+
+}
+
+@media(max-width: 1000px){
+	.tarjeta{
+		max-width: 350px;
+	}
+
+	.imgBx{
+		width: 100%;
+		height: 250px;
+	}
+
+	.imgBx.contentImgBx{
+		background-position: center 10px;
+	}
+
+	.contentBx{
+		width: 100%;
+		height: 350px;
+	}
+
+	/*tarjetas pares*/
+	.tarjeta:nth-child(even){
+	flex-direction: row-reverse;
+	align-items: center;
+	text-align: center;
+	}
+
+	/*tarjetas impares*/
+	.tarjeta:nth-child(odd){
+	flex-direction: row-reverse;
+	align-items: center;
+	text-align: center;
+	}
+}
+
+.ImgBx:nth-child(even){
+	left: -25px;	
+}
+
+.ImgBx:nth-child(odd){
+	left: -25px;
+}
+
+
