@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+	<title> Examen </title>
+</head>
+
+<body>
+	<div class="contenedor">
+		<div class="content1">
+			<div class="txt">
+				<h1> ¿Te gusta el arte? </h1>
+
+				<p> Descubre tu cuadro cada día </p>
+				<button onclick="window.popup.showModal();" class="boton"> Ver </button>
+			</div>
+
+			<div class="iconos">
+				<img src="img/facebook.svg">
+				<img src="img/instagram.svg">
+				<img src="img/twitter.svg">
+			</div>
+			</div>
+		
+
+		<div class="content2">
+			<img src="img/pexels-rodion-kutsaiev-7911758.jpg" class="img">
+		</div>
+	</div>
+
+		<!-- VENTANA MODAL -->
+		<dialog id="popup">
+			 
+			<div class="popup-content">
+				 <img src="img/heart-regular.svg" class="corazon">
+
+				<img src="img/mona-lisa.png" class="imgmodal">
+				<h5> La Gioconda </h5>
+				<button onclick="window.popup.close();"class="btn"> Aceptar  </button>
+			</div>
+
+		</dialog>
+
+
+</body>
+</html>
