@@ -123,14 +123,14 @@ h4{
 
 @media (max-width: 1000px){
 	section .container{
-		max-width: 80vw;
+		max-width: 50vw;
 		flex-direction: column;
 	}
 }
 
 @media (max-width: 1000px){
 	header{
-		max-width: 80vw;
+		max-width: 50vw;
 		flex-direction: column;
 	}
 }
