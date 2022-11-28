@@ -13,7 +13,6 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    gap: 250px;
 }
 
 body{
@@ -55,6 +54,7 @@ h1{
 	margin: 10px;
     gap: 90px;
     margin: 40px;
+    flex-wrap: wrap;
 }
 
 .caja1{
@@ -121,4 +121,16 @@ h4{
 	font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 
+@media (max-width: 1000px){
+	section .container{
+		max-width: 80vw;
+		flex-direction: column;
+	}
+}
 
+@media (max-width: 1000px){
+	header{
+		max-width: 80vw;
+		flex-direction: column;
+	}
+}
