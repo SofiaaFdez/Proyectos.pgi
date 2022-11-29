@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zen+Kaku+Gothic+New&display=swap');
 
 *{
@@ -47,7 +46,7 @@ header .menu{
     font-size: 20px;
 }
 
-header i: first-child{
+#burger{
 	display: none;
 }
 
@@ -82,12 +81,24 @@ header i:first-child{
 	width: 100%;
 }
 
+.plantillas article header .corazon{
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+
+	width: 25px;
+	height: 25px;
+
+	z-index: 5;
+}
+
 .plantillas article header img {
 	width: 100%;
 }
 
 article{
 	width: 30%;
+	position: relative;
 }
 
 @media (max-width: 1000px){
@@ -233,7 +244,6 @@ p{
 /*.section{
 	display: flex;
 	flex-wrap: wrap;
-
 	gap: 30px;
     justify-content: space-around;
     margin: 50px;
@@ -262,5 +272,3 @@ p{
 	position: absolute;
 	fill currentColor :darkred;
 	color: red;
-}
-
