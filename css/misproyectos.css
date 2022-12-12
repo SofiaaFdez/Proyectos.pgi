@@ -13,10 +13,14 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	height: 100vh;
 }
 
-body{
-	mi
+.boton{
+	background-color: #C0D0EF;
+	color: black;
+	padding: 5px 15px;
+	border-radius: 5px;
 }
 
 h1{
@@ -132,5 +136,11 @@ h4{
 	header{
 		max-width: 50vw;
 		flex-direction: column;
+	}
+}
+
+@media (max-width: 1000px){
+	header{
+		margin: 25%;
 	}
 }
