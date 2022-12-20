@@ -49,6 +49,8 @@ const menu = document.querySelector(".menu");
 icono_burger:addEventListener("click", 
 	function(){
 
+		menu.classList.toggle("mostrar");
+
 		//const menu = document.querySelector(".menu");
 
 
@@ -63,7 +65,7 @@ icono_burger:addEventListener("click",
 
 
 
-		console.log(menu);
+		/*console.log(menu);
 
 		if (menu.classList.contains("ocultar") == true ){
 			menu.classList.remove("ocultar");
@@ -75,7 +77,7 @@ icono_burger:addEventListener("click",
 				menu.classList.remove("mostar");
 				menu.classList.add("ocultar");
 			}
-		}
+		}*/
 
 
 	});
@@ -90,7 +92,6 @@ console.log(corazon);
 corazon.addEventListener("click",
 	function(){
 
-
 		console.log(corazon);
 
 		if (corazon.getAttribute("src") == "img/me-gusta.png"){
@@ -104,4 +105,17 @@ corazon.addEventListener("click",
 			}
 		}
 
+	});
+
+
+//Recupero el elemento html que hace referencia a la 
+// imagen de la lupa 
+
+const lupa = document.querySelector(".lupa");
+
+const cuadro = document.querySelector("cuadro-busqueda");
+
+lupa.addEventListener("click", 
+	function(){
+		cuadro.classList.toggle("mostrar");
 	});

@@ -46,6 +46,10 @@ header .menu{
     font-size: 20px;
 }
 
+.lupa{
+	cursor: pointer;
+}
+
 #burger{
 	display: none;
 }
@@ -66,7 +70,7 @@ header i:first-child{
 	display: flex;
 	gap: 5%;
 	justify-content: center;
-	/*flex-wrap: wrap;*/
+	flex-wrap: wrap;
 
 	max-width: 90vw;
 	margin: auto;
@@ -96,13 +100,79 @@ header i:first-child{
 	width: 100%;
 }
 
-article{
+main section article{
 	width: 30%;
 	position: relative;
 }
 
+.cuadro-busqueda{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
+	display: flex;
+	flex-direction: column;
+
+	height: 100vh;
+
+	clip-path: circle(0% at 100% 0%);
+
+	pointer-events: none;
+	cursor: pointer;
+
+}
+
+.cuadro-busqueda.mostrar{
+	pointer-events: auto;
+	clip-path: circle(10% at 100% 0%);
+}
+
+.cuadro-busqueda .arriba{
+	background-color: #B80f15;
+	flex: 1 1 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cuadro-busqueda .abajo{
+	background-color: #fff;
+	flex: 1 1 50%;
+}
+
+.cuadro-busqueda .arriba .btn-cierre{
+	position: absolute;
+	top: 16px;
+	right: 16px;
+
+	color: #fff;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.cuadro-busqueda .arriba .texto-busqueda{
+	font-size: 7vw;
+	background-color: transparent;
+	padding: 10px;
+	color: #cdbebe;
+	border-bottom: 4px solid #c74f52 ;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.cuadro-busqueda .arriba .texto-busqueda::placeholder {
+  color:  #cdbebe;
+}
+
+.cuadro-busqueda .arriba .texto-busqueda:focus-visible{
+	outline: none;
+}
+
 @media (max-width: 1000px){
-	header i:first-child{
+	#burger{
 		display: inline-flex;
 	}
 	header .btn-derech .menu{
@@ -113,10 +183,14 @@ article{
 		bottom: 0px;
 		left: 0px;
 
-		display: flex;
+		display: flex ;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+
+		clip-path: circle(0% at 0% 0%);
+
+		transition: all 1.5s ease;
 
 		background-color: #fff;
 	}
@@ -130,6 +204,8 @@ article{
 
 }
 
+<!-- Tamaño tarjetas -->
+
 @media (max-width: 1100px){
 	.plantillas{
 		max-width: 80vw;
@@ -140,6 +216,10 @@ article{
 		width: 100%;
 	}
 }
+<!--  -->
+
+
+<!-- Tamaño de las letras -->
 
 @media (max-width: 1000px){
 	.portada h1{
@@ -150,6 +230,7 @@ article{
 		font-size: clamp ();	
 	}
 }
+<!--  -->
 
 .border{
 	border: 4px solid #bc2526;
@@ -164,8 +245,11 @@ header .btn-derech nav.ocultar{
 }
 
 header .btn-derech nav.mostrar{
-	display: flex;
+	/*display: flex;*/
+	clip-path: circle(150% at 0% 0%);
+	
 }
+
 
 h2{
 	color: #999;
