@@ -15,3 +15,5 @@
     Tarjetas responsive para cualquier pantalla (móvil, tabelt, ordenador...) <br>
 -Cabecera Responsive Silo Creativo <br>
     -Página web responsive y con cabecera responsive + Javascript <br> 
+-Modo Oscuro <br>
+    Botón con cambio de fondo de pantalla <br>
