@@ -4,10 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/cabecera.css">
+	<script src="https://kit.fontawesome.com/7357de9854.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<title> Silo Creativo </title>
 </head>
 <body>
+	<section class="cuadro-busqueda">
+		<article class="arriba">
+			<a class=" btn-cierre" href="#"> X </a>
+			<input class="texto-busqueda"type="text" placeholder="Buscar...">
+		</article>
+
+		<article class="abajo">
+			
+		</article>
+
+	</section>
 	<header id="cabecera">
 		<!-- Icono menu hamburguesa -->
 		<i id="burger" class="fa-solid fa-bars"></i>
@@ -18,7 +30,23 @@
 		</div>	
 
 		<div class="btn-derech">
-			<nav class="menu ocultar"> 
+			<div class="switch-content">
+
+			<input type="checkbox" name="" class="checkbox" id="chk"> 
+
+			<label class="label" for="chk">
+			
+				<!-- <i class="fas- fa-moon"> </i>-->
+				<!-- <i class="fas- fa-sun"> </i>-->
+
+				<img src="img/luna.png">
+				<img src="img/sol.png"> 
+				<div class="ball"> </div>
+			</label>
+		
+			</div>	
+
+			<nav class="menu "> 
 				<ul>
 					<button> Temas WordPress </button>
 
@@ -35,15 +63,9 @@
 			</nav>	
 
 			<!-- Icono de Lupa -->
-			<i class="fa-solid fa-magnifying-glass"></i>
-
-		</div>
-
+			<i class="fa-solid fa-magnifying-glass lupa"> </i>
+				
 	</header>
-
-	<script src="https://kit.fontawesome.com/7357de9854.js" crossorigin="anonymous"></script>
-
-
 
 	<div class="portada">
 		<h1> Temas WordPress en Español </h1>
