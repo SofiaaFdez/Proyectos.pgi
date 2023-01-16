@@ -59,9 +59,8 @@ h1{
 	position: relative;
 	display: flex;
 	justify-content: center;
-	margin: 10px;
+	margin: 16px;
     gap: 90px;
-    margin: 40px;
     flex-wrap: wrap;
 }
 
@@ -71,24 +70,42 @@ h1{
 	width: 300px;
 	height: 400px;
 
+	position: relative;
+
 	display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     border-radius: 5%;
+
+    box-shadow: black 5px 5px 19px;
+    transition: all 0.2s ease;
+}
+
+section .container div:hover{
+	transform: translateY(-10px);
 }
 
 .caja2{
 	background-color: #C0D0EF;
-	color:  whitesmoke;
+	color:  black;
 	width: 300px;
 	height: 400px;
+
+	position: relative;
 
 	display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     border-radius: 5%;
+
+    box-shadow: black 5px 5px 19px;
+    transition: all 0.2s ease;
+}
+
+.caja2 h4{
+	color:  black;
 }
 
 .caja3{
@@ -97,11 +114,16 @@ h1{
 	width: 300px;
 	height: 400px;
 
+	position: relative;
+
 	display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 25px;
     border-radius: 5%;
+
+    box-shadow: black 5px 5px 19px;
+    transition: all 0.2s ease;
 }
 
 .imgAnimacion{
@@ -109,9 +131,10 @@ h1{
     height: 255px;
 }
 
-.img{
+.img-pag{
 	width: 300px;
     height: 210px;
+    margin-top: 40px;
 }
 
 a{
@@ -124,9 +147,10 @@ a{
 }
 
 h4{
-	color: black;
+	
 	font-size: 20px;
 	font-family: 'Zen Kaku Gothic New', sans-serif;
+	text-align: center;
 }
 
 @media (max-width: 1000px){
@@ -147,4 +171,35 @@ h4{
 	header{
 		margin: 25%;
 	}
+}
+
+.txt{
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin: 0px 8px;
+}
+
+.txt1{
+	text-align: center;
+	color: black;
+	font-size: 15px;
+	margin: 0px 10px;
+
+}
+
+.txt2{
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+	margin: 0px 8px 8px 8px;
+}
+
+.icono{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+	width: 30px;
+	height: 30px;
 }
