@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.main-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 0.4rem;
+}
+  
+  .main-logo{
+    color: black;
+    font-size:32px;
+    text-decoration:none;
+}
+
+.main-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all .2s linear;
+    background-color: rgba(0,0,0,.7);
+    z-index: 100;
+}
+  
+  .main-nav.show{
+    margin-left: 0;
+}
+  
+  .nav-links{
+    background-color: rgb(250,250,250);
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.link-item{
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+
+/* PORTADA */
+
+.portada{
+    position: relative;
+
+    height: 100vh;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-position: 50%;
+
+    background-image: url("../img/imgPortada.jpg");
+}
+
+/* .imgPortada{
+    object-fit:cover;
+    background-size: cover;
+} */
+
+.contenido{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    top: 275px;
+    left: 120px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px;
+
+    cursor: pointer;
+}
+
+/* SECTION CARTA */
+
+.sectionALERGIAS{
+    display: flex;
+}
+
+.s1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgSect{
+    width: 18%;
+}
+
+section.carta{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    padding: 80px;
+
+    background-color: black;
+    color: white;
+}
+
+.sections{
+	display: flex;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+	list-style: none;
+    display: flex;
+    gap: 13px;
+    color: #ac9eb4;
+    font-weight:  bold;
+}
+
+li{
+	cursor: pointer;
+}
+
+li:hover{
+	color: #eee7e8;
+}
+
+.fotos{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.foto{
+    width: 100%;
+    height: 100%; 
+	border-radius: 13px;
+	/* box-shadow: 0.1em 0.1em 1em rgba(255, 255, 255, 0.3); */
+    
+    
+    object-fit: cover;
+    /* position: relative; */
+
+}
+
+.fotos article{
+	width: calc(100%/3 - 20px);
+}
+
+
+h4{
+    margin-left: 20px;
+    /* font-size: 20px; */
+}
+
+.tarjeta{
+    position: relative;
+    width:300px;
+    height: 160px;
+    /* background-image: url("../img/pan-ajo.jpg"); */
+    background-size: cover;
+
+    border-radius: 12px;
+}
+
+
+.overlay{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+
+    background-color: rgba(231, 227, 227, 0.7);
+    color: black;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+    gap: 10px;
+    border-radius: 12px;
+}
+
+.tarjeta:hover > .overlay{
+    opacity: 1;
+}
+
+@media (max-width: 1000px){
+	.tarjetas2{
+		max-width: 80vw;
+		flex-direction: column;
+	}
+
+	.tarj1 article{
+		width: 100%;
+	}
+
+	.sections{
+		display: flex;
+	}
+
+	.foto{
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1000px){
+	.fotos{
+		display: flex;
+
+	}
+}
+
+/* SECTION INGREDIENTES */
+
+.ingredientes{
+    width: 100%;
+	height: 100%;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tarjeta2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*margin-top: 100px;*/
+	margin:  100px 0;
+
+	flex-wrap: wrap;
+
+	position: relative;
+}
+
+.imgIngrediente{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.contentBx h2{
+	color: white;
+}
+
+.contentBx p{
+    font-size: 13px;
+	color: white;
+}
+
+.imgBx{
+	width: 500px;
+	height: 500px;
+
+    
+
+	position: relative;
+}
+
+.imgBx.contentImgBx{
+	width: 100%;
+	height: 100%;
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.contentBx{
+	width: 500px;
+	height: 400px;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 20px;
+    padding: 14px;
+
+	background-color: black ;
+}
+
+
+@media(max-width: 1000px){
+	.tarjeta{
+		max-width: 350px;
+	}
+
+	.imgBx{
+		width: 100%;
+		height: 250px;
+	}
+
+	.imgBx.contentImgBx{
+		background-position: center 10px;
+	}
+
+	.contentBx{
+		width: 100%;
+		height: 350px;
+	}
+}
