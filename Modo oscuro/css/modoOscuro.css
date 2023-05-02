@@ -1,0 +1,72 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.switch-content{
+	position: relative;
+}
+
+.checkbox{
+	position: absolute;
+	opacity: 0;
+}
+
+.checkbox:checked + .label .ball{
+	transform: translateX(200px);
+	background-color: chartreuse ;
+}
+
+.checkbox:checked + .label{
+	background-color: brown;
+}
+
+body.dark{
+	background-color: #130042;
+}
+
+.label{
+	height: 200px;
+	background-color:grey ;
+
+	padding: 20px;
+	display: flex;
+	gap: 40px;
+
+	border-radius: 100px;
+}
+
+.label img{
+	height: 100%;
+}
+
+.ball{
+	position: absolute;
+
+	width: 165px;
+	height: 165px ;
+
+	border-radius: 50%;
+	background-color:black ;
+
+	top: 17px;
+
+	transition: all 1s ease-in-out;
+	
+
+
+}
+
+.switch-content label img{
+	height: 100%;
+	width: 50%;
+}

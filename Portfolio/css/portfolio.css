@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Rubik', sans-serif;
+}
+
+body{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+
+	background-color:#343353 ;
+
+    width: 20%;
+    height: 100%;
+
+	gap: 133px;
+
+	position: fixed;
+	left: 0;
+}
+
+main{
+	display: flex;
+    flex-direction: row;
+    background-color: #343353;
+
+    width: 80%;
+    flex-direction: column;
+}
+
+
+h1{
+	margin: 13px;
+	color:  white;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin: 13px;
+	gap: 19px;
+}
+
+.ico{
+	width: 30px;
+	height: 30px;
+}
+
+article{
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.fondo{
+	height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.contador{
+	font-size: 3em;
+}
+
+.titulo p{
+	font-size: 2em;
+}
+.texto{
+	animation: bounce;
+	animation-duration: 2s ;
+	animation-iteration-count: infinite;
+}
+
+.frase{
+	display: flex;
+}
+
+.parallax{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.parallax .layer{
+	position: absolute;
+}
+
+.p1{
+	top: 87%;
+    left: 90%;
+}
+
+.p2{
+	left: 20%;
+    top: 10%;
+}
+
+.p3{
+	right: 22%;
+    top: 50%;
+}
+
+.p4{
+	top: 70%;
+    right: 10%;
+}
+
+.p5{
+    top: 59%;
+    left: 21%;
+
+}
+
+.p6{
+	top: 26%;
+    right: 12%;
+}
+
+.p7{
+	top: 89%;
+    left: 58%;
+}
+
+.p8{
+	top: 8%;
+    right: 36%;
+}
+
+.p9{
+	top: 71%;
+    left: 43%;
+}
+
+.p10{
+	top: 41%;
+    left: 39%;
+}
+
+.avatar{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 8px;
+
+}
+
+.avatarIco{
+	border-radius: 50%;
+}
+
+.iconos{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 16px;
+}
+
+.icono{
+	width: 30px;
+	height: 30px;
+}
+
+.content{
+	border-radius: 20px;
+	background-color: white;
+	padding: 13px;
+	display: flex;
+	width: 75%;
+}
+
+.btn{
+	background-color: #fd4b64;
+    color: white;
+    border-radius: 100px;
+    padding: 10px;
+    border: none;
+    width: 134px;
+
+    margin: 0px 16px 28px;
+}
+
+.contenido2{
+	margin-left: 30px;
+
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nombreEstadistica{
+	display: flex;
+    align-items: center;
+    gap: 170px;
+}
+
+.barra{
+	position: relative;
+	width: 278px;
+    height: 9px;
+	background-color: #f1f1f1;
+
+	border-radius: 5px;
+
+}
+
+.colorBarra1{
+	position: absolute;
+	background-color: #f9cf5f;
+	width: 85%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.colorBarra2{
+	position: absolute;
+	background-color: #fd4b64;
+	width: 95%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.colorBarra3{
+	position: absolute;
+	background-color: #7774bf;
+	width: 70%;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.activarContador{
+	background-color: whitesmoke;
+	color: black;
+	display: flex;
+    gap: 13px;
+    padding: 7px;
+
+
+}
+
+
+/* ABOUT ME */
+.aboutme{
+	display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+
+    gap: 20px;
+    padding: 80px;
+}
+
+h2{
+	color: #45425b;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+h3{
+	color: #45425b
+}
+
+.logoMe{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-nombre{
+	display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.avatar2{
+	border-radius: 50%;
+	border-radius: 50%;
+    width: 165px;
+}
+
+.contenido{
+	display: flex;
+    flex-direction: column;
+	width: 50%;
+	gap: 13px;
+}
+
+.estadisticas{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+
+.titulo-frase{
+	display: flex;
+    flex-direction: column;
+}
+
+.ico-estadisticas{
+	width: 30px;
+	height: 30px;
+}
+
+
+/* SERVICES */
+
+.services{
+	display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+
+    gap: 45px;
+    padding: 0px 80px 80px;
+}
+
+.tarjetas{
+	display: flex;
+    gap: 18px;
+}
+
+.t1{
+	background-color: #6c6ce4 ;
+	border-radius: 10px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 13px;
+}
+
+.t1Text{
+	color: white;
+}
+
+.t2{
+	background-color: #f8d74c ;
+	border-radius: 10px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 13px;
+}
+
+.t3{
+	background-color: #f97a8b;
+	border-radius: 10px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 13px;
+
+}
+
+.imgT{
+	width: 60px;
+	height: 60px;
+}
+
+a{
+	color: #f892a5;
+}
+
+.txtService{
+	text-align: center;
+}
+
+
+/* EXPERIENCE */
+
+.experience{
+	display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+
+    gap: 45px;
+    padding: 0px 80px 80px;
+}
+
+.cuadros{
+	display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+
+.cuadro1{
+	background-color: white;
+	display: flex;
+
+	padding: 13px;
+    border-radius: 15px;
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+}
+
+.contenidoCuadro{
+	display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.iconosRosa1{
+	display: flex;
+	flex-direction: column;
+	margin-right: 25px;
+	align-items: center;
+}
+
+.iconosRosa2{
+	display: flex;
+	flex-direction: column;
+	margin-right: 25px;
+	align-items: center;
+}
+
+.cnt{
+	display: flex;
+	flex-direction: column;
+    gap: 8px;
+}
+
+.imgExp{
+	width: 40px;
+	height: 40px;
+}
+
+.imgExp2{
+	width: 30px;
+	height: 30px;
+}
+
+h5{
+	color: #9f9da2;
+}
+
+.imgLinea{
+	height: 100px;
+    width: 43px;
+}
+
+.imgLinea2{
+	height: 114px;
+    width: 43px;
+}
+
+.imgLinea3-1{
+	height: 43px;
+    width: 43px;
+}
+
+.imgLinea3-2{
+	height: 44px;
+    width: 43px;
+}
+
+
+/* RECENT WORKS */
+
+.recentWorks{
+	display: flex;
+    flex-direction: column;
+
+    background-color: whitesmoke;
+
+    gap: 45px;
+    padding: 0px 80px 80px;
+}
+
+.sections{
+	display: flex;
+}
+
+ul{
+	list-style: none;
+    display: flex;
+    gap: 13px;
+    color: #ac9eb4;
+    font-weight:  bold;
+}
+
+li:hover{
+	color: #e95872;
+}
+
+.fotos{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	width: 90%;
+}
+
+.foto{
+	width: 313px;
+	border-radius: 13px;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 30%);
+}
+

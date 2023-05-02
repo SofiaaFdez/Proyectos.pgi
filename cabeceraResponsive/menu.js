@@ -117,5 +117,23 @@ const cuadro = document.querySelector("cuadro-busqueda");
 
 lupa.addEventListener("click", 
 	function(){
+<<<<<<< HEAD
 		cuadro.classList.toggle("mostrar");
 	});
+=======
+		cuadro.classList.toggle("mostrar")
+});
+
+
+//Modo oscuro
+
+const checkbox = document.querySelector(".checkbox");
+
+console.log(checkbox);
+
+checkbox.addEventListener("click",
+	function(){
+		document.body.classList.toggle("dark");
+	
+});
+>>>>>>> 9b0ceca841f49c0ce6c2773892e9465b58c634c1

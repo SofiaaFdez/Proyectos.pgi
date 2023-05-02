@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(241, 213, 247);
+    height: 40px;
+
+    position: fixed;
+    width: 100%;
+
+}
+
+.fixed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+ul{
+    display: flex;
+    gap: 13px;
+
+    list-style: none;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
